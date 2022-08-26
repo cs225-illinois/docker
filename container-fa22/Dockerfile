@@ -30,7 +30,7 @@ FROM ubuntu:jammy-20220801 AS cs225_base_no_catch2
         && rm -rf /var/lib/apt/lists/*
 
     # Declare an environment variable so we can detect this container.
-    ENV CS225_CONTAINER="nextgen"
+    ENV CS225_CONTAINER="fa22"
 
 FROM cs225_base_no_catch2 AS cs225_intermediate_builder_catch2
     WORKDIR /tmp/
